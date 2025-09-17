@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Hello Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      body{font-family:system-ui,Arial;padding:16px}
+      .row{margin:8px 0}
+      button{padding:8px 12px;border:0;border-radius:6px;cursor:pointer}
+      .primary{background:#2563eb;color:#fff}
+      select{padding:6px 8px;border:1px solid #ddd;border-radius:6px;min-width:260px}
+      .card{border:1px solid #eee;border-radius:10px;padding:12px;margin-top:12px}
+      .muted{color:#666;font-size:12px}
+    </style>
+  </head>
+  <body>
+    <h3>🚀 Pick a Product → write it to this Quote</h3>
+    <div class="card">
+      <div class="row"><b>Quote ID:</b> <span id="quoteId">...</span></div>
+      <div class="row">
+        <label>Product:<br/>
+          <select id="productSelect"><option>Loading...</option></select>
+        </label>
+      </div>
+      <div class="row">
+        <button class="primary" id="saveBtn">Save to Quote field</button>
+      </div>
+      <div class="row muted" id="status"></div>
+    </div>
+
+    <!-- Zoho CRM JS SDK -->
+    <!-- <script src="https://crm.zohopublic.com/crm/sdk.js"></script>
+    <script src="main.js"></script> -->
+  </body>
+</html>
