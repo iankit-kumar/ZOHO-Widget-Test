@@ -1,0 +1,20 @@
+{
+  "name": "HelloWidget",
+  "version": "1.0",
+  "description": "Tiny test widget to read Quote ID and update a field.",
+  "tabs": [{
+    "url": "index.html",
+    "title": "Hello Widget",
+    "icon": "app.png"
+  }],
+  "location": {
+    "applies_to": ["Quotes"]
+  },
+  "permissions": {
+    "scopes": [
+      "ZohoCRM.modules.products.READ",
+      "ZohoCRM.modules.quotes.READ",
+      "ZohoCRM.modules.quotes.UPDATE"
+    ]
+  }
+}
